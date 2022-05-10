@@ -1,0 +1,29 @@
+.formargin {
+  margin-bottom: 3%;
+}
+
+#button-up {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  color: rgb(78, 78, 78);
+  text-align: center;
+  font-size: 30px;
+  padding: 0;
+  transition: .3s;
+}
+
+#button-up:hover {
+  cursor: pointer;
+  transition: .3s;
+  color: rgb(141, 141, 141);
+}
+
+#IPD_status_svg,
+#administrative_service_center_svg,
+#humanitarian_help_svg {
+  width: 100%;
+  margin: 0;
+  padding: auto;
+}

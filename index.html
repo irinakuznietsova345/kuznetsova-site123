@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Дані -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Назва -->
+  <title>Help UkrainianS</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <!-- Vivus.min.js -->
+  <script src="js/vivus.min.js"></script>
+
+  <!-- Wow.min.js -->
+  <script src="js/wow.min.js"></script>
+
+  <!-- Інші скрипти -->
+  <script src="js/jquery-3.6.0.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Jquery.drawsvg.js -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/jquery.drawsvg.js"></script>
+</head>
+
+<body class="bg-light">
+  <!-- Навбар -->
+  <nav class="container navbar navbar-expand-lg navbar-light bg-light formargin">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Help UkrainianS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#IDP_status" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Статус ВПО</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#online_in_diia">Онлайн у Дії</a></li>
+              <li><a class="dropdown-item" href="#offline">Офлайн</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#humanitarian_help" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Гуманітарна допомога</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#about_us">Про нас</a></li>
+              <li><a class="dropdown-item" href="#order_help">Замовити допомогу</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#shelter" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Прихисток</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#information">Інформація</a></li>
+              <li><a class="dropdown-item" href="#instruction">Інструкція</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Текст пошуку" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Знайти</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Статус ВПО -->
+  <div class="container formargin">
+    <h1 id="IDP_status" class="formargin wow animate__animated animate__fadeInUp">Статус ВПО</h1>
+    <div class="formargin">
+      <div class="container wow animate__animated animate__fadeInUp">
+        <object id="IPD_status_svg" type="image/svg+xml" data="images/svg/IPD_status.svg"></object>
+      </div>
+    </div>
+    <!-- Онлайн у Дії -->
+    <h3 id="online_in_diia" class="formargin wow animate__animated animate__fadeInUp">Онлайн у Дії</h3>
+    <div class="formargin wow animate__animated animate__fadeInUp">
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">Завантажте застосунок «Дія» або оновіть його.</div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">Переконайтеся, що у вас є ID-картка чи біометричний закордонний паспорт.</div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">Зайдіть у розділ «Послуги» та виберіть «Отримати статус ВПО».</div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">Укажіть свою актуальну адресу.</div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">Підтвердьте своє місце перебування за допомогою геолокації.</div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">Якщо у вас є діти, можете отримати статус переселенця і для них.</div>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Офлайн -->
+    <h3 id="offline" class="formargin wow animate__animated animate__fadeInUp">Офлайн</h3>
+    <div class="formargin">
+      <div class="container wow animate__animated animate__fadeInUp">
+        <object id="administrative_service_center_svg" type="image/svg+xml"
+          data="images/svg/administrative_service_center.svg"></object>
+      </div>
+    </div>
+    <div class="formargin wow animate__animated animate__fadeInUp">
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">Зверніться до ЦНАПу, органу соцзахисту населення або до представників місцевої
+            влади.
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">Візьміть з собою документ, що посвідчує особу та підтверджує громадянство України.
+            Точний перелік документів для отримання статусу уточнюйте в ЦНАПі, до якого збираєтесь.</div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">Якщо в паспорті немає даних про реєстрацію місця проживання в <a
+              href="https://zakon.rada.gov.ua/laws/show/204-2022-%D1%80#Text" class="link-dark fw-bold">одному з
+              відповідних
+              регіонів</a>, то візьміть із собою будь-який документ, що підтверджує це: військовий квиток, трудову
+            книжку, право власності на майно тощо.</div>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Гуманітарна допомога -->
+  <div class="container formargin">
+    <h1 id="humanitarian_help" class="formargin wow animate__animated animate__fadeInUp">Гуманітарна допомога</h1>
+
+    <div class="formargin">
+      <div class="container wow animate__animated animate__fadeInUp">
+        <object id="humanitarian_help_svg" type="image/svg+xml" data="images/svg/humanitarian_help.svg"></object>
+      </div>
+    </div>
+
+    <!-- Повідомлення -->
+    <h3 id="about_us" class="formargin wow animate__animated animate__fadeInUp">Про нас</h3>
+    <div class="card formargin wow animate__animated animate__fadeInUp">
+      <div class="card-body">
+        <p class="card-text">Платформу HelpUkrainianS створено Міністерством соціальної політики України за підтримки
+          Міністерства цифрової трансформації України та Програми розвитку ООН в Україні за фінансової підтримки Швеції
+          з метою забезпечення нагальних потреб громадян, які постраждали від російської агресії. Завдання проєкту —
+          об'єднати можливості країни, міжнародних неурядових організацій та волонтерів в адресній
+          гуманітарній допомозі. Крок за кроком та пліч-о-пліч здолаємо будь-який виклик!</p>
+      </div>
+    </div>
+
+    <!-- Замовити допомогу -->
+    <h3 id="order_help" class="formargin wow animate__animated animate__fadeInUp">Замовити допомогу</h3>
+    <div class="formargin wow animate__animated animate__fadeInUp">
+      <form>
+        <div class="row mb-3">
+          <label for="name" class="col-sm-2 col-form-label">ПІБ</label>
+          <div class="col-sm-10"><input type="text" class="form-control" id="name"></div>
+        </div>
+        <div class="row mb-3">
+          <label for="phone" class="col-sm-2 col-form-label">Номер телефону</label>
+          <div class="col-sm-10"><input type="text" class="form-control" id="phone"></div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputState" class="col-sm-2 col-form-label">Область</label>
+          <div class="col-sm-10">
+            <select id="inputState" class="form-select">
+              <option selected>Вибрати</option>
+              <option>Автономна республіка Крим</option>
+              <option>Вінницька</option>
+              <option>Волинська</option>
+              <option>Дніпропетровська</option>
+              <option>Донецька</option>
+              <option>Житомирська</option>
+              <option>Закарпатська</option>
+              <option>Запорізька</option>
+              <option>Івано-Франківська</option>
+              <option>Київська</option>
+              <option>Кіровоградська</option>
+              <option>Луганська</option>
+              <option>Львівська</option>
+              <option>Миколаївська</option>
+              <option>Одеська</option>
+              <option>Полтавська</option>
+              <option>Рівненська</option>
+              <option>Сумська</option>
+              <option>Тернопільська</option>
+              <option>Харківська</option>
+              <option>Херсонська</option>
+              <option>Хмельницька</option>
+              <option>Черкаська</option>
+              <option>Чернівецька</option>
+              <option>Чернігівська</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="adress" class="col-sm-2 col-form-label">Адреса</label>
+          <div class="col-sm-10"><input type="text" class="form-control" id="adress"></div>
+        </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Необхідна допомога</legend>
+          <div class="col-sm-10 offset-sm-0">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">Їжа</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">Одяг</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">Ліки</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">Транспорт</label>
+            </div>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Замовити</button>
+      </form>
+    </div>
+
+    <!-- Повідомлення -->
+    <div class="formargin wow animate__animated animate__fadeInUp">
+      <div class="alert alert-primary" role="alert">
+        <p class="fw-bold">Про процедуру надання допомоги:</p>Отримати допомогу можуть люди з будь-яких областей
+        України. Термін надання допомоги 3–10 днів в залежності від регіону вашого проживання. Коли допомога буде
+        готова, вам зателефонують.
+      </div>
+    </div>
+
+    <!-- Питання -->
+    <div class="formargin wow animate__animated animate__fadeInUp">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Що таке Help
+              UkrainianS?</button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">Help UkrainianS — це платформа, яка допомагає кожному, хто постраждав від
+              російської агресії. Тут ви можете дізнатися, як отримати гроші від держави, залишити заявку на допомогу
+              або
+              запропонувати підтримати інших у забезпеченні продуктами харчування, одягом, ліками тощо.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Чи у всіх регіонах
+              надається
+              допомога?</button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">Залежить від типу допомоги:<br>1. Допомога з рук в руки. Людина, яка потребує
+              допомогу залишає заявку, в якій описує яка саме допомога потрібна. Благодійник, який готовий допомогти
+              відгукується на цю заявку. Можливість допомоги та швидкість залежить від того, яка допомога потрібна, та
+              куди її потрібно передати. Наприклад, якщо допомогу потрібно доставити близько до зони активних бойових
+              дій,
+              то таку заявку благодійнику буде обробити значно важче.<br>2. Допомога онлайн. Людина, яка потребує
+              допомогу
+              залишає заявку, в якій описує яка саме допомога потрібна. Благодійник, який готовий допомогти відгукується
+              та переказує кошти на Передплату єДопомога. Це наче поповнення віртуального рахунку, кошти з якого можна
+              витратити лише на товари, за виключенням тютюну та алкоголю. Отримати таку допомогу можна лише в магазинах
+              наших партнерів. Список та адреси таких магазинів вказані у нас на сайті.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Як швидко обробляється
+              заявка?</button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">Це залежить від допомоги, яку ви потребуєте та від того, де ви знаходитеся.
+              єДопомога — це платформа, де один одного можуть знайти ті, кому потрібна допомога та ті, хто може
+              допомогти.
+              Тож швидкість обробки вашої заявки залежить від того, як швидко на неї відгукнеться благодійник, який
+              готовий вам допомогти.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Чому мою заявку довго не
+              обробляють?</button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">Якщо заявка довго не обробляється, це означає, що на неї поки не відгукнувся
+              благодійник, який може вам допомогти. Наша команда постійно працює над залученням нових благодійників.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Прихисток -->
+  <div class="container formargin">
+    <h1 id="shelter" class="formargin wow animate__animated animate__fadeInUp">Прихисток</h1>
+
+    <!-- Інформація -->
+    <h3 id="information" class="formargin wow animate__animated animate__fadeInUp">Інформація</h3>
+
+    <div class="formargin wow animate__animated animate__fadeInUp">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images/jpg/01.jpg" class="img-fluid rounded-start">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Для консультацій щодо отримання компенсацій</h5>
+              <p class="card-text">15–45 працює цілодобово.</p>
+              <p class="card-text"><small class="text-muted">Урядовий контактний центр</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="formargin wow animate__animated animate__fadeInUp">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images/jpg/02.jpg" class="img-fluid rounded-start">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Хто може отримати компенсацію?</h5>
+              <p class="card-text">Громадяни України віком від 18 років, які є власниками жилих приміщень і безоплатно
+                розміщують в цих приміщеннях
+                внутрішньо переміщених осіб.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Інструкція -->
+    <h3 id="instruction" class="formargin wow animate__animated animate__fadeInUp">Інструкція</h3>
+    <div class="formargin wow animate__animated animate__fadeInUp">
+      <div class="list-group">
+        <div class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Реєстрація</h5>
+            <span class="badge bg-primary rounded-pill">1</span>
+          </div>
+          <p class="mb-1">Зареєструвати своє житло на Прихистку.</p>
+        </div>
+        <div class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Заява</h5>
+            <span class="badge bg-primary rounded-pill">2</span>
+          </div>
+          <p class="mb-1">Не пізніше наступного дня подати заяву до органів місцевого самоврядування (виконавчого
+            комітету), вказавши ім’я та по-батькові кожної з розміщених осіб та додаючи копії документів, що посвідчують
+            їх особи.</p>
+        </div>
+        <div class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Оповістити про зміни</h5>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </div>
+          <p class="mb-1">В день припинення розміщення внутрішньопереміщеної особи або зміни їх кількості подати заяву з
+            інформацією про зміну переліку проживаючих осіб.</p>
+        </div>
+        <div class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Виконавчий комітет</h5>
+            <span class="badge bg-primary rounded-pill">4</span>
+          </div>
+          <p class="mb-1">Звернутись до виконавчого комітету сільської, селищної, міської ради за місцем розташування
+            жилого приміщення для отримання грошової допомоги.</p>
+        </div>
+        <div class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Виплата</h5>
+            <span class="badge bg-primary rounded-pill">5</span>
+          </div>
+          <p class="mb-1">Виплата здійснюється у безготівковій формі за вказаними у заяві банківськими реквізитами до
+            20-го числа наступного місяця за умови відсутності заборгованості по комуналці власника жила.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Кнопка «вгору» -->
+  <div id="button-up">
+    <i class="fa-solid fa-circle-arrow-up fa-lg"></i>
+  </div>
+
+  <!-- Anime.min.js -->
+  <script src="js/anime.min.js"></script>
+
+  <!-- Мій скрипт -->
+  <script src="js/script.js"></script>
+
+  <!-- Js від Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
